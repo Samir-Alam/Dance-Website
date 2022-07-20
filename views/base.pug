@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Dance Academy
+    block scripts
+    block links
+    block style
+  body
+    nav#navbar.top 
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | DA
+            li #[a(href = "/") Home] 
+            li #[a(href = "/") About] 
+            li #[a(href = "/") Services] 
+            li #[a(href = "/") Class Info]
+            li #[a(href = "/contact") Contact Us]
+    block content 
+    footer#footer
+        div.signs
+            a.fa.fa-facebook.btn(href='#') 
+            a.twitter-follow-button.btn(href='https://twitter.com/Samiralam00?ref_src=twsrc%5Etfw' data-show-count='false') Follow @Samiralam00
+            script(async='' src='https://platform.twitter.com/widgets.js' charset='utf-8')
+
+        | Copyright © 2019 SamDanceAcademy.com | All rights reserved
+    
